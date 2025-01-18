@@ -45,7 +45,7 @@ const Register = () => {
               placeholder={"Confirm your password"}
             />
             <CustomSelect form={form} fieldName={"role"} label={"Role"} placeholder={"Select your role"} options={roleOptions} />
-            <Button className="w-full" type="submit">
+            <Button className="w-full mt-8" type="submit">
               Sign Up
             </Button>
           </CustomForm>

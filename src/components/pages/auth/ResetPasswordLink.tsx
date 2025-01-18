@@ -31,8 +31,8 @@ const ResetPasswordLink = () => {
         </CardHeader>
         <CardContent>
           <CustomForm onSubmit={onSubmit} form={form}>
-            <CustomInput form={form} fieldName={"email"} label={"Email"} inputType={"text"} placeholder={"Enter Your Email"} />
-            <Button type="submit" className="w-full">
+            <CustomInput form={form} fieldName={"email"} label={"Email"} inputType={"text"} placeholder={"Enter your email"} />
+            <Button type="submit" className="w-full mt-8">
               Submit
             </Button>
           </CustomForm>

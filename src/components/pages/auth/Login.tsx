@@ -31,14 +31,14 @@ const Login = () => {
         </CardHeader>
         <CardContent>
           <CustomForm onSubmit={onSubmit} form={form}>
-            <CustomInput form={form} fieldName={"email"} label={"Email"} inputType={"text"} placeholder={"Enter Your Email"} />
-            <CustomPassword form={form} fieldName={"password"} label={"Password"} inputType={"password"} placeholder={"Enter Your Password"} />
-            <p className="text-sm font-semibold text-primary-text hover:underline">
+            <CustomInput form={form} fieldName={"email"} label={"Email"} inputType={"text"} placeholder={"Enter your email"} />
+            <CustomPassword form={form} fieldName={"password"} label={"Password"} inputType={"password"} placeholder={"Enter your password"} />
+            <p className="text-sm font-semibold text-primary-text hover:underline mt-2">
               <Link href="/account/reset-password-link">Forgot password?</Link>
             </p>
 
-            <Button type="submit" className="w-full">
-              Submit
+            <Button type="submit" className="w-full mt-8">
+              Sign In
             </Button>
           </CustomForm>
         </CardContent>

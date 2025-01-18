@@ -86,3 +86,11 @@ export const resetPasswordConfirmValue = {
   password: "",
   confirmedPassword: "",
 };
+
+//Email Verification OTP
+export const emailOtpVerificationSchema = z.object({
+  otp: z.string().length(4, { message: "The OTP must be exactly 4 digits." }),
+});
+export const emailOtpVerificationDefaultValue = {
+  otp: "",
+};

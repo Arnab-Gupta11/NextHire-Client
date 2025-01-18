@@ -6,7 +6,12 @@ export default {
   content: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
+      fontFamily: {
+        inconsolata: ["var(--font-inconsolata)"],
+        maitree: ["var(--font-maitree)"],
+      },
       colors: {
+        "primary-text": "#5313CA",
         "primary-bg-dark": "#030817",
         "secondary-bg-dark": "#15162F",
         "primary-bg-light": "#f9fbfd",

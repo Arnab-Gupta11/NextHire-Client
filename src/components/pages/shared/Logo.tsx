@@ -8,7 +8,6 @@ import React, { useEffect, useState } from "react";
 const Logo = ({ width }: { width: number }) => {
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  console.log(theme);
   useEffect(() => {
     setMounted(true);
   }, []);

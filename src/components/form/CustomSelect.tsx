@@ -9,14 +9,14 @@ const CustomSelect = ({ form, fieldName, label, placeholder, options }: TCustomS
       name={fieldName}
       render={({ field }) => (
         <FormItem>
-          <FormLabel>{label}</FormLabel>
+          <FormLabel className="text-slate-800 dark:text-slate-200">{label}</FormLabel>
           <Select onValueChange={field.onChange} defaultValue={field.value}>
             <FormControl>
               <SelectTrigger>
                 <SelectValue placeholder={placeholder} />
               </SelectTrigger>
             </FormControl>
-            <SelectContent>
+            <SelectContent className="bg-primary-bg-light dark:bg-primary-bg-dark">
               {options?.map((option: Record<string, string>) => (
                 <SelectItem key={option.value} value={option.value}>
                   {option.label}
@@ -24,7 +24,7 @@ const CustomSelect = ({ form, fieldName, label, placeholder, options }: TCustomS
               ))}
             </SelectContent>
           </Select>
-          <FormMessage />
+          <FormMessage className="text-red-500" />
         </FormItem>
       )}
     />

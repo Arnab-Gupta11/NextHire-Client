@@ -13,13 +13,17 @@ const ProfileAvatar = () => {
   return (
     <div className="mt-2">
       <DropdownMenu>
-        <DropdownMenuTrigger className="outline-none">
+        <DropdownMenuTrigger className="outline-none hover:scale-105 active:scale-95 duration-700">
           <Avatar>
             <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
             <AvatarFallback>DP</AvatarFallback>
           </Avatar>
+          <div></div>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="border-none bg-primary-bg-light dark:bg-primary-bg-dark shadow-md shadow-secondary-bg-light dark:shadow-secondary-bg-dark">
+        <DropdownMenuContent
+          side="bottom"
+          className="bg-primary-bg-light dark:bg-primary-bg-dark border-none shadow-md shadow-secondary-bg-light dark:shadow-secondary-bg-dark outline-none"
+        >
           <DropdownMenuLabel>My Account</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuItem>Profileasdfgfdgfdggdgshghshhshs</DropdownMenuItem>

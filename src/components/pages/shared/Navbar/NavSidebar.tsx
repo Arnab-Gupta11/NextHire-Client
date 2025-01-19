@@ -10,12 +10,12 @@ const NavSidebar = ({ menuItems }: { menuItems: TNavMenuItem }) => {
   return (
     <div>
       <Sheet>
-        <SheetTrigger className="border-none bg-primary-bg-light dark:bg-primary-bg-dark shadow-md shadow-secondary-bg-light dark:shadow-secondary-bg-dark p-2 rounded-lg flex lg:hidden">
+        <SheetTrigger className="border-none bg-primary-bg-light dark:bg-primary-bg-dark shadow-md shadow-secondary-bg-light dark:shadow-secondary-bg-dark p-2 rounded-lg block lg:hidden">
           <Menu size={15} />
         </SheetTrigger>
         <SheetContent
           side={"left"}
-          className="border-none bg-primary-bg-light dark:bg-primary-bg-dark shadow-md shadow-secondary-bg-light dark:shadow-secondary-bg-dark"
+          className="border-none bg-primary-bg-light dark:bg-primary-bg-dark shadow-md shadow-secondary-bg-light dark:shadow-secondary-bg-dark outline-none"
         >
           <SheetHeader>
             <SheetTitle>

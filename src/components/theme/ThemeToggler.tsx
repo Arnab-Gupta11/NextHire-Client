@@ -14,7 +14,7 @@ export function ThemeToggler() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
-          variant="destructive"
+          variant="outline"
           size="icon"
           className="bg-primary-bg-light dark:bg-primary-bg-dark border-none shadow-md shadow-secondary-bg-light dark:shadow-secondary-bg-dark outline-none peer-focus-within:outline-none"
         >

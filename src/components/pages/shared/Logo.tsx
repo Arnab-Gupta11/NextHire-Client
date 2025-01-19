@@ -1,8 +1,8 @@
 "use client";
 import { useTheme } from "next-themes";
 import Image from "next/image";
-import darkLogo from "../../../../public/darkLogo.png";
-import lightLogo from "../../../../public/lightLogo.png";
+import darkLogo from "../../../../public/image/logo/darkLogo.png";
+import lightLogo from "../../../../public/image/logo/lightLogo.png";
 import React, { useEffect, useState } from "react";
 
 const Logo = ({ width }: { width: number }) => {

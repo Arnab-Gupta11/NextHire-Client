@@ -2,12 +2,13 @@
 import Lottie from "lottie-react";
 import banner from "../../../../../public/image/banner/banner.json";
 import { Button } from "@/components/ui/button";
+import CompaniesSlider from "./CompaniesSlider";
 const Banner = () => {
   return (
     <div>
-      <div>
+      <div className="bg-primary-bg-light dark:bg-[#010917] pb-10">
         <div className="max-w-screen-xl mx-auto">
-          <div className="flex justify-center items-start min-h-screen pt-5 sm:pt-10 bs:pt-20">
+          <div className="flex justify-center items-start pt-5 sm:pt-10 bs:pt-20">
             <div className="grid grid-cols-1 bs:grid-cols-2 gap-3 bs:gap-7 justify-center items-center mx-5 bs:px-20 lg:mx-0 ">
               <div className="lg:w-full h-full flex justify-center bs:ml-5 bs:justify-start items-center order-2 bs:order-1">
                 <div>
@@ -32,6 +33,15 @@ const Banner = () => {
               </div>
             </div>
           </div>
+          <div className="mt-16 text-center font-semibold text-sm xsm:text-base sm:text-xl text-slate-800 dark:text-slate-300 mx-5">
+            <p>
+              Over <span className="text-primary-text">50,000</span> big companies
+            </p>
+            <p>
+              trust NextHire for their <span className="text-primary-text">Hiring</span>.
+            </p>
+          </div>
+          <CompaniesSlider />
         </div>
       </div>
     </div>

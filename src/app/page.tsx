@@ -1,4 +1,6 @@
 import Banner from "@/components/pages/Home/Banner";
+import HowItWorks from "@/components/pages/Home/HowItWorks";
+import WhyChooseUs from "@/components/pages/Home/WhyChooseUs";
 import Navbar from "@/components/pages/shared/Navbar";
 
 export default function Home() {
@@ -6,9 +8,10 @@ export default function Home() {
     <>
       <div className="bg-primary-bg-light dark:bg-[#010917] min-h-screen">
         <Navbar />
-        <div>
-          <Banner />
-        </div>
+
+        <Banner />
+        <HowItWorks />
+        <WhyChooseUs />
       </div>
     </>
   );
